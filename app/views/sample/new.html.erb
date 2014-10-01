@@ -1,0 +1,20 @@
+<%= form_tag  sample_new_path  do  %>
+  <p>
+    <%= label_tag :Current_Position %><br>
+    <%= text_field_tag :current %>
+  </p>
+ 
+  <p>
+    <%= label_tag :Destination %><br>
+    <%= text_field_tag :destination %>
+  </p>
+ 
+  <p>
+    <%= submit_tag "Submit" %>
+  </p>
+<% end %>
+
+<br/>
+<p><%= notice %></p>
+<b>OutPut :</b>
+<%= @dama %>
